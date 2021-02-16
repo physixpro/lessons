@@ -28,6 +28,8 @@ console.log(numbersGreaterThanNum)
 const fish = Math.max(10, 20);
 console.log(fish)
 
+
+// Max function 
 const numMax = (arr) => {
     const largestNum = Math.max(...arr)
     return largestNum
@@ -35,3 +37,13 @@ const numMax = (arr) => {
 
 const largestNum = numMax([32,5])
 console.log(largestNum)
+
+//Min function
+const numMin = (arr) => {
+    const min = Math.min(...arr)
+    return min
+}
+
+const min = numMin([3,5,6])
+console.log(min)
+
