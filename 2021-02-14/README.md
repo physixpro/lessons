@@ -31,3 +31,12 @@ const sum = add(1,2)
 
 ```
 
+Create a function that given an array returns to me the highest and lowest number in that array.
+
+Create a function that converts days into seconds.
+
+```js
+
+const numMaxMin = () => {
+    
+}
