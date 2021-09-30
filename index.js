@@ -118,6 +118,18 @@ app.delete("/karate/:karateId", async (req,res) => {
   console.log(id)
   res.json(`${id} deleted`)
 })
+
+
+/********************** Edit/PUT request ******************/
+app.put("/athletes/:athleteId", async (req,res) => {
+  const athleteId = req.params.athleteId;
+  const body = req.body;
+  const x = await db.collection("athletes").updateOne({_id: new ObjectID(athleteId)},
+  {$set: {name: body.name, description: body.description, country: body.country}});
+  console.log(x)
+  res.json(x)
+}) 
+
 //port
 
 const port = process.env.PORT || 3001;
